@@ -11,15 +11,14 @@ const UserInput = (props) =>{
         // props.onAddUser(inputName,inputAge );
         // console.log(inputName,inputAge)
 if (inputName.trim().length === 0 || inputAge.trim().length ===0) {
-    return;
     
 }
 if (inputName === '' || inputAge === '') {
-    return;
+    console.log('input empty')
     
 }
 if (Number(inputAge) === 0 || Number(inputAge ) < 0) {
-    return;
+    console.log('age cannot be this')
 }
 setInputName('');
 setInputAge('');

@@ -19,7 +19,7 @@ if (inputName === '' || inputAge === '') {
     
 }
 if (Number(inputAge) === 0 || Number(inputAge ) < 0) {
-    return;
+    console.log('age cannot be this')
 }
 setInputName('');
 setInputAge('');

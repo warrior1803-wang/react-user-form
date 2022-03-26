@@ -15,11 +15,11 @@ if (inputName.trim().length === 0 || inputAge.trim().length ===0) {
     
 }
 if (inputName === '' || inputAge === '') {
-    return;
+    return
     
 }
 if (Number(inputAge) === 0 || Number(inputAge ) < 0) {
-    return;
+    console.log('age cannot be this')
 }
 setInputName('');
 setInputAge('');
