@@ -2,6 +2,11 @@ import React from "react";
 import Card from "../UI/Card";
 import styles from "./Modal.module.css";
 import Button from "../UI/Button";
+const Backdrop = props =>{
+  return     <div className={styles.backdrop} onClick={props.onClose} />
+
+}
+const 
 const Modal = (props) => {
   if (!props.show) {
     return null;
@@ -15,7 +20,6 @@ const Modal = (props) => {
   }
   return (
     <React.Fragment>
-    <div className={styles.backdrop} onClick={props.onClose}>
     
       <Card className={styles.modal}>
         <div>
@@ -29,7 +33,7 @@ const Modal = (props) => {
           </div>
         </div>
       </Card>
-    </div>
+    
     </React.Fragment>
   );
 };

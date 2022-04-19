@@ -3,7 +3,7 @@ import styles from "./UserInput.module.css";
 import Card from "../../UI/Card";
 import Button from "../../UI/Button";
 import Modal from '../../Modal/Modal';
-// import Wrapper from "../../Helper/Wrapper";
+import Wrapper from "../../Helper/Wrapper";
 
 const UserInput = (props) => {
   const [inputName, setInputName] = useState("");
@@ -35,7 +35,7 @@ const UserInput = (props) => {
     
   };
   return (
-<React.Fragment>
+    <Wrapper>
     <Card className={styles.input}>
       {/* <button onClick={()=>setShow(true)}>Show modal</button> */}‘
       <Modal errorState={errorState} onClose={()=>setShow(false)} show={show}></Modal>
@@ -58,8 +58,8 @@ const UserInput = (props) => {
         />
 
         <Button type="submit">Add User</Button>
-       </form>
-    </Card></React.Fragment>
+      </form>
+    </Card></Wrapper>
   );
 };
 export default UserInput;

@@ -2,6 +2,9 @@ import React from "react";
 import Card from "../UI/Card";
 import styles from "./Modal.module.css";
 import Button from "../UI/Button";
+const Backdrop = props =>{
+  return
+}
 const Modal = (props) => {
   if (!props.show) {
     return null;

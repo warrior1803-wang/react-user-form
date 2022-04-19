@@ -30,7 +30,6 @@ const Modal = (props) => {
         </div>
       </Card>
     </div>
-    </React.Fragment>
   );
 };
 export default Modal;

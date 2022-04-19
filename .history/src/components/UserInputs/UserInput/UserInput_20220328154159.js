@@ -58,8 +58,8 @@ const UserInput = (props) => {
         />
 
         <Button type="submit">Add User</Button>
-       </form>
-    </Card></React.Fragment>
+      </form>
+    </Card>
   );
 };
 export default UserInput;

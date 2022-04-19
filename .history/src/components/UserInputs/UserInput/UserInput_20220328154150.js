@@ -35,7 +35,7 @@ const UserInput = (props) => {
     
   };
   return (
-<React.Fragment>
+<React.Fragment></React.Fragment>
     <Card className={styles.input}>
       {/* <button onClick={()=>setShow(true)}>Show modal</button> */}‘
       <Modal errorState={errorState} onClose={()=>setShow(false)} show={show}></Modal>
@@ -58,8 +58,8 @@ const UserInput = (props) => {
         />
 
         <Button type="submit">Add User</Button>
-       </form>
-    </Card></React.Fragment>
+      </form>
+    </Card>
   );
 };
 export default UserInput;

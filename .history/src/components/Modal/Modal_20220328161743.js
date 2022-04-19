@@ -14,9 +14,8 @@ const Modal = (props) => {
     message = "Username or age cannot be empty";
   }
   return (
-    <React.Fragment>
     <div className={styles.backdrop} onClick={props.onClose}>
-    
+      <div></div>
       <Card className={styles.modal}>
         <div>
           <div className={styles.header}>
@@ -30,7 +29,6 @@ const Modal = (props) => {
         </div>
       </Card>
     </div>
-    </React.Fragment>
   );
 };
 export default Modal;
